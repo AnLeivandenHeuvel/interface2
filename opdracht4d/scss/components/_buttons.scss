@@ -1,0 +1,14 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  background-color: variables.$primary-color;
+  color: #fff;
+  padding: variables.$spacing-medium variables.$spacing-large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: variables.$secondary-color;
+}

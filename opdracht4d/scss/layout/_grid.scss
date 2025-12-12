@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as *;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -variables.$spacing-medium;
+}
+
+.col {
+  flex: 1;
+  padding: variables.$spacing-medium;
+}
