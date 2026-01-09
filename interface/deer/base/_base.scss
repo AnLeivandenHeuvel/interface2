@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(to bottom, var(--sky-1), var(--sky-2) 70%, #eaf6ff);
+}
+
+.scene {
+  position: relative;
+  height: var(--scene-h);
+  overflow: hidden;
+}

@@ -1,0 +1,99 @@
+.deer {
+  position: absolute;
+  left: 10%;
+  bottom: 38%;
+  transform-origin: 50% 80%;
+  transform: translateY(0) scale(var(--scale));
+  animation: body-bob var(--cycle) ease-in-out infinite;
+  width: 260px;
+  height: 170px;
+
+  &-shadow {
+    position: absolute;
+    left: 20%;
+    bottom: -14px;
+    width: 140px;
+    height: 22px;
+    background: radial-gradient(60% 70% at 50% 50%, rgba(0,0,0,0.28), rgba(0,0,0,0) 60%);
+    filter: blur(2px);
+    animation: shadow-pulse var(--cycle) ease-in-out infinite;
+  }
+
+  .body {
+    width: 180px;
+    height: 86px;
+    left: 36px;
+    top: 58px;
+    background: linear-gradient(to bottom, var(--accent), var(--body));
+    border-radius: 54px / 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -16px;
+      top: 14px;
+      width: 40px;
+      height: 42px;
+      background: var(--body);
+      border-radius: 60% 40% 40% 60% / 40% 40% 60% 60%;
+      transform: rotate(6deg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 18px;
+      width: 34px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 60% 40% 40% 60% / 40% 40% 60% 60%;
+      transform: rotate(-8deg);
+    }
+  }
+
+  .neck {
+    width: 22px;
+    height: 86px;
+    left: 40px;
+    top: -6px;
+    background: var(--body);
+    transform-origin: bottom center;
+    transform: rotate(-22deg);
+    border-radius: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 8px;
+      width: 10px;
+      height: 60px;
+      background: var(--accent);
+      border-radius: 10px;
+      transform: rotate(-6deg);
+      opacity: 0.7;
+    }
+  }
+
+  .head {
+    left: -12px;
+    top: -28px;
+    width: 70px;
+    height: 40px;
+    background: var(--body);
+    border-radius: 60% 40% 40% 60% / 60% 45% 55% 40%;
+    transform: rotate(-14deg);
+    box-shadow: inset -10px 0 0 rgba(255,255,255,0.06);
+  }
+
+  .muzzle {
+    left: -24px;
+    top: -8px;
+    width: 40px;
+    height: 28px;
+    background: var(--accent);
+    border-radius: 50% 40% 40% 50% / 50% 40% 60% 60%;
+    transform: rotate(-18deg);
+  }
+}
